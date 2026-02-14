@@ -58,11 +58,6 @@ def get_quotes():
         _quotes_cache = load_quotes()
     return _quotes_cache
 
-# Add a multiplication tool
-@mcp.tool()
-def multiply(a: int, b: int) -> int:
-    """Multiply two numbers"""
-    return a * b
 
 # Add No-as-a-Service tool
 @mcp.tool()
@@ -78,17 +73,6 @@ def get_motivational_quote() -> str:
     quotes = get_quotes()
     return random.choice(quotes)
  
-# Add a message resource
-@mcp.resource("greeting://{name}")
-def get_message(name: str) -> str:
-    """Get a customised welcome message"""
-    return f"Welcome, {name}!"
-
-# Pre-defined prompt template
-@mcp.prompt()
-def ask_code_review(code_snippet: str) -> str:
-    """Generates a code review request"""
-    return f"Please review the following code: {code_snippet}"
 
 if __name__ == "__main__":
     mcp.run()
