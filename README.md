@@ -198,6 +198,19 @@ Edit `reasons.json` and add new reason strings to the array:
 ]
 ```
 
+## Build Your Own MCP Server with This Functionality
+
+If you want to code your own MCP server with this functionality from scratch, refer to the **[BUILD_PROMPT.md](BUILD_PROMPT.md)** file included in this project. It contains:
+
+- Detailed step-by-step instructions for building the entire project
+- Complete specifications for each component
+- Code requirements and best practices
+- Data structure guidelines for quotes and reasons
+- Documentation standards
+- Success criteria and verification checklist
+
+This prompt can be used with an AI assistant or developer to recreate the project or adapt it for your own needs.
+
 ## Troubleshooting
 
 ### Server won't start
